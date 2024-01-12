@@ -1,4 +1,5 @@
-# import utime
+import utime
+import pyb
     
 class MotorDriver:  
 
@@ -21,7 +22,7 @@ class MotorDriver:
                                     pin = self.pin2)
         print ('Creating a motor driver')
         
-    def enable(self, duty):
+    def enable(self):
         self.EN.high()
         
     def disable(self):
@@ -75,14 +76,5 @@ class EncoderDriver:
         return self.pos
 
     def zero(self):
-        self.pos.write(0)    
-
-# if __name__ == '__main__':
-#     encoder_drv = EncoderDriver(4, 'B6', 'B7', 1, 2)
-#     while True:
-#         print(encoder_drv.read())
+        self.pos = 0   
     
-# if __name__ == '__main__':
-#     motor_drv = MotorDriver(pyb.Pin.cpu.A10, 3, pyb.Pin.cpu.B4, pyb.Pin.cpu.B5, 1, 2)
-#     motor_drv.enable()
-#     motor_drv.set_duty_cycle(0)

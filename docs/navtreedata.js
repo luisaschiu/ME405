@@ -24,16 +24,12 @@
 */
 var NAVTREE =
 [
-  [ "ME405_Portfolio", "index.html", [
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
-    ] ]
-  ] ]
+  [ "ME405_Portfolio", "index.html", ]
 ];
 
 var NAVTREEINDEX =
 [
-"dir_68267d1309a1af8e8297ef4c3efbcdba.html"
+"index.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

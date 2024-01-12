@@ -23,7 +23,7 @@ class EncoderDriver:
     def read(self):
         ''' @brief          Reads the encoder position and returns the values.
             @details        Position is found without encoder overflow.
-            @return          The position of the encoder.
+            @return         The position of the encoder.
         '''
         self.current = self.tim.counter()
         self.dlt = self.current - self.past
